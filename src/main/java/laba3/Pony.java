@@ -24,6 +24,22 @@ public class Pony {
         this.name = Integer.toString(valueForAll);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public int getCurrentCount() {
+        return currentCount;
+    }
+
+    public int getPurchaseOrder() {
+        return purchaseOrder;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
         String res = id+"\n"+currentCount+"\n"+purchaseOrder+"\n"+name+"\n";
