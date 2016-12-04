@@ -7,6 +7,7 @@ import java.time.LocalDate;
  * Created by Євгеній on 04.12.2016.
  */
 public class Goods {
+    private int id;
     private String name;
     private LocalDate date;
     private BigDecimal price;
@@ -55,5 +56,10 @@ public class Goods {
 
     public BigDecimal costOf() {
         return price.multiply(new BigDecimal(count));
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
