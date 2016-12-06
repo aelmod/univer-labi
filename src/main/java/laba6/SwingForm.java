@@ -2,7 +2,7 @@ package laba6;
 
 import javax.swing.*;
 
-public class GuiForInetAddrSwing extends JFrame {
+public class SwingForm extends JFrame {
     private JPanel panel1;
     private JTextArea textArea1;
 
@@ -10,7 +10,7 @@ public class GuiForInetAddrSwing extends JFrame {
         return textArea1;
     }
 
-    public GuiForInetAddrSwing() {
+    public SwingForm() {
         setContentPane(panel1);
     }
 }
