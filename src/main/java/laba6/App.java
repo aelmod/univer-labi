@@ -14,16 +14,16 @@ public class App {
                 System.out.println(inetAddresses[i]);
             }
 
-            swingGui(text);
-            AWTGui(text);
+            showSwingGui(text);
+            showAwtGui(text);
 
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
     }
 
-    private static void AWTGui(String text) {
-        GuiForInetAddrAWT form2 = new GuiForInetAddrAWT();
+    private static void showAwtGui(String text) {
+        AwtForm form2 = new AwtForm();
         form2.setVisible(true);
         form2.setSize(400, 400);
         form2.setTitle("AWT GUI for InetAddress");
@@ -33,8 +33,8 @@ public class App {
         form2.getTextArea().setEditable(false);
     }
 
-    private static void swingGui(String text) {
-        GuiForInetAddrSwing form = new GuiForInetAddrSwing();
+    private static void showSwingGui(String text) {
+        SwingForm form = new SwingForm();
         form.setVisible(true);
         form.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         form.setSize(400, 400);
