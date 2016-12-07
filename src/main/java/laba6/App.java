@@ -1,12 +1,11 @@
 package laba6;
 
-import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
         System.out.println("1) Swing GUI");
-        System.out.println("1) AWT GUI");
-        System.out.println("1) Console");
+        System.out.println("2) AWT GUI");
+        System.out.println("3) Console");
         System.out.println("4) Exit");
         switch (ConsoleUtils.getIntFromUser(1,4)) {
             case 1: showSwingGui(); break;

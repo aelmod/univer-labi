@@ -8,8 +8,28 @@
     <border type="none"/>
     <children>
       <component id="3ccf3" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
-        <constraints border-constraint="Center"/>
-        <properties/>
+        <constraints border-constraint="Last"/>
+        <properties>
+          <editable value="false"/>
+          <rows value="20"/>
+        </properties>
+      </component>
+      <component id="71d44" class="javax.swing.JTextField" binding="textField1">
+        <constraints border-constraint="West"/>
+        <properties>
+          <columns value="28"/>
+          <horizontalAlignment value="10"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b96d7" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints border-constraint="East"/>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Button"/>
+          <verticalAlignment value="0"/>
+        </properties>
       </component>
     </children>
   </grid>

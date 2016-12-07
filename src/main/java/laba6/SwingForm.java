@@ -5,6 +5,8 @@ import javax.swing.*;
 public class SwingForm extends JFrame {
     private JPanel panel1;
     private JTextArea textArea1;
+    private JButton button1;
+    private JTextField textField1;
 
     public JTextArea getTextArea1() {
         return textArea1;
