@@ -12,6 +12,8 @@ public class SwingForm extends JFrame {
 
     public SwingForm() {
         setContentPane(panel1);
+        setSize(400, 400);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }
 

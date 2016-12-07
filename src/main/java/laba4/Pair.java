@@ -1,8 +1,5 @@
 package laba4;
 
-/**
- * Created by Євгеній on 04.12.2016.
- */
 public class Pair {
     protected int a = 0;
     protected int b = 0;
@@ -29,5 +26,4 @@ public class Pair {
     public String toString() {
         return "(a: " + a + ", b: " + b + ")";
     }
-
 }

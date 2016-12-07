@@ -16,6 +16,8 @@ public class App {
             stack2.push(stack1);
         }
 
+        System.out.println("Reverse:");
+
         while(!stack2.isEmpty()) {
             System.out.println(stack2.pop());
         }
