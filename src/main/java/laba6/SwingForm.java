@@ -1,6 +1,7 @@
 package laba6;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 
 public class SwingForm extends JFrame {
     private JPanel panel1;
@@ -16,6 +17,13 @@ public class SwingForm extends JFrame {
         setContentPane(panel1);
         setSize(400, 400);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        button1.addActionListener(this::onButtonClick);
+    }
+
+    private void onButtonClick(ActionEvent event) {
+        String inetAddresses = InetAddressResolver.getInetAddrsByDomainName(textField1.getText());
+        textArea1.setText(textArea1.getText() + inetAddresses + "\n\r");
     }
 }
 
